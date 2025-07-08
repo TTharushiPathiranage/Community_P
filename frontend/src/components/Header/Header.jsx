@@ -10,7 +10,7 @@ const Header = () => {
         <h2>Baked with Love, Served with a Smile</h2>
         <p>
           Delicious breads, cakes, and pastries made fresh daily using only the
-          finest ingredients. .
+          finest ingredients from Liyanage Backery.
         </p>
         <button>View Menu</button>
       </div>
