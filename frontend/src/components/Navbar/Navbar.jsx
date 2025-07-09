@@ -28,28 +28,28 @@ const Navbar = ({ setShowLogin }) => {
         <Link
           to="/"
           onClick={() => setMenu("home")}
-          className={`Rs.{menu === "home" ? "active" : ""}`}
+          className={`${menu === "home" ? "active" : ""}`}
         >
           Home
         </Link>
         <a
           href="#explore-menu"
           onClick={() => setMenu("menu")}
-          className={`Rs.{menu === "menu" ? "active" : ""}`}
+          className={`${menu === "menu" ? "active" : ""}`}
         >
           Menu
         </a>
         <a
           href="#app-download"
           onClick={() => setMenu("mob-app")}
-          className={`Rs.{menu === "mob-app" ? "active" : ""}`}
+          className={`${menu === "mob-app" ? "active" : ""}`}
         >
           About Us
         </a>
         <a
           href="#footer"
           onClick={() => setMenu("contact")}
-          className={`Rs.{menu === "contact" ? "active" : ""}`}
+          className={`${menu === "contact" ? "active" : ""}`}
         >
           Contact Us
         </a>
