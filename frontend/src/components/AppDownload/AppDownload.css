@@ -31,6 +31,11 @@
   margin-bottom: 10px;
 }
 
+.app-download-content h3 {
+  font-size: max(1.6vw, 24px);
+  margin-bottom: 10px;
+}
+
 .app-download-content p {
   font-size: max(1.0vw, 16px);
   font-weight: 400;

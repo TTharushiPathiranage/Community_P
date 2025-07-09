@@ -56,7 +56,16 @@ position: relative;
 .navbar-right button:hover {
     background: #fff4f2;
 }
+.navbar-cart-icon{
+    width: 24px;
+    height: auto;
 
+}
+
+.navbar-profile-icon{
+    width: 26px;
+    height: auto;
+}
 .navbar-profile{
     position: relative;
 
@@ -76,6 +85,9 @@ position: relative;
 .navbar-profile-dropdown img{
     width: 20px;
 }
+
+
+
 .navbar-profile-dropdown li:hover{
     color: #8B5E3C;
 }
@@ -86,9 +98,20 @@ position: relative;
     background-color: #fff2ef;
     padding: 12px 25px;
     border-radius: 4px;
-    border: 1px solid tomato;
+    border: 1px solid #8B5E3C;
     outline: 2px solid white;
     list-style: none;
+}
+.navbar-order-icon{
+    color: #8B5E3C;
+    height: 20px;
+    width: auto;
+}
+
+.navbar-logout-icon{
+    color: #8B5E3C;
+    height: 20px;
+    width: auto;
 }
 .navbar-profile hr{
     background-color: gray;

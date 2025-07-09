@@ -22,7 +22,7 @@ const Add = () => {
     formData.append("price", Number(data.price));
     formData.append("category", data.category);
     formData.append("image", image);
-    const response = await axios.post(`${url}/api/food/add`, formData);
+    const response = await axios.post(`Rs.{url}/api/food/add`, formData);
     if (response.data.success) {
       toast.success(response.data.message);
       setData({
@@ -106,7 +106,7 @@ const Add = () => {
               name="price"
               onChange={onChangeHandler}
               value={data.price}
-              placeholder="$25"
+              placeholder="Rs.25"
             />
           </div>
         </div>

@@ -3,6 +3,10 @@ import "./Navbar.css";
 import { assets } from "../../assets/assets";
 import { Link, useNavigate } from "react-router-dom";
 import { StoreContext } from "../../Context/StoreContext";
+import { FaCartShopping } from "react-icons/fa6";
+import { FaUser } from "react-icons/fa";
+import { MdOutlineShoppingBag } from "react-icons/md";
+import { HiOutlineLogout } from "react-icons/hi";
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
@@ -24,52 +28,52 @@ const Navbar = ({ setShowLogin }) => {
         <Link
           to="/"
           onClick={() => setMenu("home")}
-          className={`${menu === "home" ? "active" : ""}`}
+          className={`Rs.{menu === "home" ? "active" : ""}`}
         >
-          home
+          Home
         </Link>
         <a
           href="#explore-menu"
           onClick={() => setMenu("menu")}
-          className={`${menu === "menu" ? "active" : ""}`}
+          className={`Rs.{menu === "menu" ? "active" : ""}`}
         >
-          menu
+          Menu
         </a>
         <a
           href="#app-download"
           onClick={() => setMenu("mob-app")}
-          className={`${menu === "mob-app" ? "active" : ""}`}
+          className={`Rs.{menu === "mob-app" ? "active" : ""}`}
         >
-          about us
+          About Us
         </a>
         <a
           href="#footer"
           onClick={() => setMenu("contact")}
-          className={`${menu === "contact" ? "active" : ""}`}
+          className={`Rs.{menu === "contact" ? "active" : ""}`}
         >
-          contact us
+          Contact Us
         </a>
       </ul>
       <div className="navbar-right">
-        <img src={assets.search_icon} alt="" />
         <Link to="/cart" className="navbar-search-icon">
-          <img src={assets.basket_icon} alt="" />
+          <FaCartShopping className="navbar-cart-icon" />
           <div className={getTotalCartAmount() > 0 ? "dot" : ""}></div>
         </Link>
         {!token ? (
           <button onClick={() => setShowLogin(true)}>sign in</button>
         ) : (
           <div className="navbar-profile">
-            <img src={assets.profile_icon} alt="" />
+            <FaUser className="navbar-profile-icon" />
             <ul className="navbar-profile-dropdown">
               <li onClick={() => navigate("/myorders")}>
                 {" "}
-                <img src={assets.bag_icon} alt="" /> <p>Orders</p>
+                <MdOutlineShoppingBag className="navbar-order-icon" />{" "}
+                <p>Orders</p>
               </li>
               <hr />
               <li onClick={logout}>
                 {" "}
-                <img src={assets.logout_icon} alt="" /> <p>Logout</p>
+                <HiOutlineLogout className="navbar-logout-icon" /> <p>Logout</p>
               </li>
             </ul>
           </div>

@@ -9,10 +9,7 @@ const Footer = () => {
         <div className="footer-content-left">
           <img src={assets.logo} alt="" />
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            Liyanage Bake House in Pambahinna is your friendly neighborhood bakery, serving fresh bread, tasty short eats, and delicious cakes every day. Loved for its quality, affordable prices, and warm service, it’s the perfect stop for a quick snack or a sweet treat
           </p>
           <div className="footer-social-icons">
             <img src={assets.facebook_icon} alt="" />

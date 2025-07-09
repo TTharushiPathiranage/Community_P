@@ -23,7 +23,7 @@ const AppDownload = () => {
         </div>
 
         <div className="app-download-content">
-          <h2>Our Vision</h2>
+          <h3>Our Vision</h3>
           <p>
             To be the most loved local bakery in the region, known for quality,
             freshness, and a welcoming experience that brings people together.
@@ -31,7 +31,7 @@ const AppDownload = () => {
         </div>
 
         <div className="app-download-content">
-          <h2>Our Mission</h2>
+          <h3>Our Mission</h3>
           <p>
             To deliver delicious, freshly made baked goods and snacks with
             consistency, care, and a commitment to excellent service making
